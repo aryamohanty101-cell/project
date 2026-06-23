@@ -1,0 +1,144 @@
+/* Baseline Structural Framework Overhauls */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    line-height: 1.5;
+}
+
+.app-container { display: grid; grid-template-columns: 1fr; min-height: 100vh; }
+@media (min-width: 1300px) { .app-container { grid-template-columns: 460px 1fr; } }
+
+/* Sidebar Administrative Blueprint Frameworks */
+.input-panel {
+    background-color: #ffffff;
+    padding: 24px;
+    border-right: 1px solid #cbd5e1;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+.panel-header { margin-bottom: 24px; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; }
+.panel-header h1 { font-size: 20px; color: #4338ca; font-weight: 800; text-transform: uppercase; letter-spacing: -0.5px; }
+
+/* Dedicated Sidebar Entry Cards Layout Panels */
+.card { border-radius: 12px; padding: 16px; margin-bottom: 20px; border: 1px solid #e2e8f0; }
+.profile-config-card { background-color: #f0fdfa; border-color: #ccfbf1; }
+.pyq-input-card { background-color: #f0f9ff; border-color: #bae6fd; }
+.faculty-card { background-color: #faf5ff; border-color: #e9d5ff; }
+.event-input-card { background-color: #fff7ed; border-color: #ffedd5; }
+.alert-input-card { background-color: #fffbeb; border-color: #fef3c7; }
+.input-subtext { font-size: 11px; color: #475569; font-weight: 600; margin-bottom: 12px; display: block; }
+
+.form-group { margin-bottom: 12px; }
+.w-50 { width: 50%; }
+.input-row { display: flex; gap: 12px; }
+
+.form-group label { display: block; font-size: 10px; font-weight: 700; color: #475569; margin-bottom: 4px; text-transform: uppercase; }
+input[type="text"], input[type="number"], select, textarea {
+    width: 100%; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 13px; color: #334155; font-family: inherit;
+}
+
+/* Unified Action Engine Button Interfaces */
+.btn {
+    width: 100%; padding: 10px; border: none; border-radius: 6px; color: white; font-size: 12px; font-weight: 700; cursor: pointer; text-transform: uppercase; transition: opacity 0.2s;
+}
+.btn:hover { opacity: 0.9; }
+.btn-primary { background-color: #0d9488; }
+.btn-dark { background-color: #0f172a; }
+.btn-purple { background-color: #7c3aed; }
+.btn-event { background-color: #ea580c; }
+.btn-warning { background-color: #d97706; }
+
+/* Dashboard Graphical Layout Architecture Outputs */
+.dashboard-portal { padding: 24px; overflow-y: auto; max-height: 100vh; }
+@media (min-width: 768px) { .dashboard-portal { padding: 32px; } }
+
+.dashboard-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #cbd5e1; padding-bottom: 16px; margin-bottom: 24px; }
+.dashboard-header h2 { font-size: 24px; font-weight: 800; color: #0f172a; letter-spacing: -0.5px; }
+.reg-no { font-size: 13px; color: #475569; font-weight: 500; margin-top: 2px; }
+.sem-filter select { width: 110px; padding: 6px; font-weight: 600; }
+
+/* Broadcast Notification Alert Canvas Ribbon Banner */
+.broadcast-banner-board { background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); color: white; padding: 16px; border-radius: 12px; margin-bottom: 24px; }
+.broadcast-banner-board h3 { font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px; }
+.broadcast-node { background: rgba(255, 255, 255, 0.15); padding: 10px; border-radius: 6px; margin-bottom: 8px; }
+.broadcast-node h4 { font-size: 13px; font-weight: 700; }
+.broadcast-node p { font-size: 12px; opacity: 0.95; margin-top: 2px; }
+
+/* Core Metrics Counter Containers Matrices */
+.metrics-row { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 24px; }
+@media (min-width: 640px) { .metrics-row { grid-template-columns: repeat(2, 1fr); } }
+.metric-box { background-color: #ffffff; padding: 16px 20px; border-radius: 12px; border: 1px solid #cbd5e1; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+.metric-label { font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; }
+.metric-value { font-size: 26px; font-weight: 800; margin-top: 2px; color: #0f172a; }
+
+/* Grid Dashboard Master Positioning Viewframes */
+.portal-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+@media (min-width: 1150px) { .portal-grid { grid-template-columns: 1.5fr 1.5fr; } }
+
+.status-board { background-color: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #cbd5e1; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
+.status-board h3 { font-size: 14px; font-weight: 700; margin-bottom: 16px; border-bottom: 2px solid #f1f5f9; padding-bottom: 8px; text-transform: uppercase; color: #334155; letter-spacing: 0.5px; }
+
+.border-top-purple { border-top: 4px solid #a855f7; }
+.border-top-blue { border-top: 4px solid #2563eb; }
+.border-top-orange { border-top: 4px solid #ea580c; }
+.border-top-gray { border-top: 4px solid #64748b; }
+
+/* Program Output Cards & Components Modules Styling */
+.subject-card-output, .syllabus-card-output, .dynamic-event-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; }
+.subject-meta-line, .syllabus-meta-line { display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; color: #1e293b; }
+.faculty-contact-txt { font-size: 11px; color: #64748b; margin: 4px 0; font-weight: 500; }
+
+.content-download-btn { display: inline-flex; align-items: center; font-size: 11px; color: #2563eb; text-decoration: none; font-weight: 600; margin-top: 8px; background: #eff6ff; padding: 4px 10px; border-radius: 4px; border: 1px solid #bfdbfe; }
+.content-download-btn:hover { background: #dbeafe; }
+
+.progress-track { width: 100%; background-color: #e2e8f0; height: 8px; border-radius: 9999px; overflow: hidden; margin-top: 6px; }
+.progress-bar { height: 100%; border-radius: 9999px; transition: width 0.4s ease; }
+.bar-safe { background-color: #10b981; } .text-safe { color: #10b981; }
+.bar-danger { background-color: #ef4444; } .text-danger { color: #ef4444; }
+.bar-purple { background-color: #a855f7; } .text-purple { color: #a855f7; }
+.danger-note { font-size: 11px; font-weight: 600; margin-top: 4px; }
+
+/* ADVANCED PYQ INTERFACE MATRIX WORKSPACES */
+.pyq-hub-layout { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 10px; }
+@media (min-width: 600px) { .pyq-hub-layout { grid-template-columns: 1fr 1fr; } }
+.pyq-sub-panel h4 { font-size: 11px; font-weight: 700; text-transform: uppercase; color: #475569; margin-bottom: 10px; padding-bottom: 4px; border-bottom: 1px dashed #cbd5e1; }
+@media (min-width: 600px) { .border-left-dashed { border-left: 1px dashed #cbd5e1; padding-left: 16px; } }
+
+.pyq-document-node { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px; display: flex; flex-direction: column; gap: 4px; }
+.pyq-meta-row { display: flex; justify-content: space-between; align-items: center; }
+.pyq-subj { font-size: 12px; font-weight: 700; color: #0f172a; }
+.pyq-yr { font-size: 11px; color: #64748b; font-weight: 600; }
+.pyq-badge { font-size: 9px; font-weight: 700; padding: 1px 4px; border-radius: 3px; width: max-content; text-transform: uppercase; }
+.pyq-badge-faculty { background: #dcfce7; color: #15803d; }
+.pyq-badge-student { background: #fef3c7; color: #b45309; }
+.pyq-download-anchor { font-size: 11px; color: #2563eb; text-decoration: none; font-weight: 600; margin-top: 4px; width: max-content; }
+
+/* Dynamic Event Display System Node Cards */
+.event-header-row { display: flex; justify-content: space-between; align-items: flex-start; }
+.event-title-line h4 { font-size: 14px; font-weight: 800; color: #0f172a; }
+.authority-tag { font-size: 9px; font-weight: 700; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; margin-top: 4px; display: inline-block; }
+.tag-student { background: #ffedd5; color: #ea580c; }
+.tag-faculty { background: #f3e8ff; color: #7c3aed; }
+.event-details-body { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; border-top: 1px dashed #e2e8f0; padding-top: 8px; font-size: 12px; }
+.detail-item-box { background: #ffffff; padding: 6px 10px; border-radius: 6px; border-left: 3px solid #cbd5e1; }
+.detail-item-box.highlight { border-left-color: #ea580c; background: #fff7ed; }
+.detail-item-box strong { color: #475569; display: block; font-size: 9px; text-transform: uppercase; }
+
+/* Placement Quiz Node Wrappers */
+.bg-quiz-dark { background-color: #0f172a; color: #f8fafc; }
+.text-white { color: #f8fafc !important; }
+.quiz-question { font-size: 13px; font-weight: 600; margin-bottom: 12px; border-left: 3px solid #ea580c; padding-left: 8px; color: #cbd5e1; }
+.quiz-options-layout { display: flex; flex-direction: column; gap: 6px; }
+.quiz-opt-btn { background: #1e293b; border: 1px solid #334155; padding: 8px 12px; text-align: left; border-radius: 6px; color: #e2e8f0; font-size: 12px; cursor: pointer; }
+.quiz-opt-btn:hover { background: #334155; }
+.quiz-feedback-box { font-size: 12px; padding: 10px; border-radius: 6px; margin-top: 10px; font-weight: 600; }
+.feedback-correct { background-color: #064e3b; color: #6ee7b7; border: 1px solid #047857; }
+.feedback-wrong { background-color: #7f1d1d; color: #fca5a5; border: 1px solid #b91c1c; }
+
+.placeholder-text { font-size: 12px; color: #94a3b8; text-align: center; padding: 12px 0; font-style: italic; }
+.placeholder-text-white { font-size: 12px; color: rgba(255, 255, 255, 0.7); font-style: italic; }
+.mt-12 { margin-top: 12px; } .hidden { display: none !important; }
+.space-y > * + * { margin-top: 12px; }
+.space-y-small > * + * { margin-top: 8px; }
